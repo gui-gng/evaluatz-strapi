@@ -5,11 +5,11 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'postgres',
-        host: env('DATABASE_HOST', 'db-postgresql-evaluatz-do-user-5184838-0.db.ondigitalocean.com'),
-        port: env.int('DATABASE_PORT', 25060),
-        database: env('DATABASE_NAME', 'evaluatz_strapi'),
-        username: env('DATABASE_USERNAME', 'doadmin'),
-        password: env('DATABASE_PASSWORD', 'zp6265k3vj79x6uy'),
+        host: env('DATABASE_HOST', `${process.env.DATABASE_HOST}`),
+        port: env.int('DATABASE_PORT', `${process.env.DATABASE_PORT}`),
+        database: env('DATABASE_NAME', `${process.env.DATABASE_NAME}`),
+        username: env('DATABASE_USERNAME', `${process.env.DATABASE_USERNAME}`),
+        password: env('DATABASE_PASSWORD', `${process.env.DATABASE_PASSWORD}`),
         ssl: env.bool('DATABASE_SSL', true),
       },
       options: {}
