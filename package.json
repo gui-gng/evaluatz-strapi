@@ -1,0 +1,37 @@
+{
+  "name": "evaluatz-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.0.2",
+    "strapi-admin": "3.0.2",
+    "strapi-utils": "3.0.2",
+    "strapi-plugin-content-type-builder": "3.0.2",
+    "strapi-plugin-content-manager": "3.0.2",
+    "strapi-plugin-users-permissions": "3.0.2",
+    "strapi-plugin-email": "3.0.2",
+    "strapi-plugin-upload": "3.0.2",
+    "strapi-connector-bookshelf": "3.0.2",
+    "knex": "<0.20.0",
+    "pg": "7.10.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "fb81c3b7-6126-4951-af0c-16fda5257acb"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

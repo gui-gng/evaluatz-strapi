@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Restaurant",
+  "info": {
+    "name": "restaurant"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "token": {
+      "type": "uid"
+    }
+  }
+}

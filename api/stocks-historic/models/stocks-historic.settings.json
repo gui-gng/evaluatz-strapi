@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stock_historic",
+  "info": {
+    "name": "stocks_historic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "symbol": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "open": {
+      "type": "decimal"
+    },
+    "high": {
+      "type": "decimal"
+    },
+    "low": {
+      "type": "decimal"
+    },
+    "close": {
+      "type": "decimal"
+    },
+    "volume": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/stocks-historics",
+      "handler": "stocks-historic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stocks-historics/count",
+      "handler": "stocks-historic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stocks-historics/:id",
+      "handler": "stocks-historic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/stocks-historics",
+      "handler": "stocks-historic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/stocks-historics/:id",
+      "handler": "stocks-historic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/stocks-historics/:id",
+      "handler": "stocks-historic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

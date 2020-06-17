@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stocks",
+  "info": {
+    "name": "stocks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "company_name": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    }
+  }
+}
