@@ -12,7 +12,16 @@ module.exports = ({ env }) => ({
         password: env('DATABASE_PASSWORD', `${process.env.DATABASE_PASSWORD}`),
         ssl: env.bool('DATABASE_SSL', true),
       },
-      options: {}
+      options: {
+        "useNullAsDefault": true,
+        "pool": {
+          "min": 1,
+          "max": 4,
+          "idleTimeoutMillis": 30000,
+          "createTimeoutMillis": 30000,
+          "acquireTimeoutMillis": 30000
+        }
+      }
     },
   },
 });
